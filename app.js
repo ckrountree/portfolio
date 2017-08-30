@@ -10,4 +10,4 @@ function Projects ( languages, date, company ) {
 
 var busMall = new Projects(this.language, this.date, this.company);
 var aboutMe = new Projects(this.language, this.date, this.company);
-var teamRocketMan = new Projects(this.language, this.date, this.company);
+var PocketCode = new Projects(this.language, this.date, this.company);
