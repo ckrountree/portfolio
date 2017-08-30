@@ -7,3 +7,7 @@ function Projects ( languages, date, company ) {
 
 //   var projects = [];
 }
+
+var busMall = new Projects(this.language, this.date, this.company);
+var aboutMe = new Projects(this.language, this.date, this.company);
+var teamRocketMan = new Projects(this.language, this.date, this.company);
