@@ -12,11 +12,16 @@ body {
 }
 
 h1 {
-    font-size: 100%;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
     padding: .6em 0;
     margin: 0 15px;
 }
 
+/* Want flex container (justify-content) with 'space-around'? */
+nav {
+    display: 
+}
 ul {
     list-style: none;
     background-color: #444;
@@ -25,33 +30,33 @@ ul {
     margin: 0;
 }
 
-.nav li {
-    font-family: 'Oswald', sans-serif;
+li {
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.2em;
     line-height: 40px;
     height: 40px;
     border-bottom: 1px solid #888;
 }
 
-.nav a {
+a {
     text-decoration: none;
     color: #fff;
     display: block;
     transition: .3s background-color;
 }
 
-.nav a:hover {
+a:hover {
     background-color: #005f5f;
 }
 
-.nav a.active {
+a.active {
     background-color: #fff;
     color: #444;
     cursor: default;
 }
 
 @media screen and (min-width: 600px) {
-    .nav li {
+    li {
       width: 120px;
       border-bottom: none;
       height: 50px;
