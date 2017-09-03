@@ -1,0 +1,89 @@
+/* Begin with a CSS reset default for all browsers */
+/* * {
+    margin: 0;
+    padding: 0;
+} */
+
+/* Set my own desired CSS parameters */
+
+body {
+    line-height: 1;
+    font-size: 100%;
+}
+
+h1 {
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    padding: .6em 0;
+    margin: 0 15px;
+}
+
+nav {
+    /* display: inline; */
+}
+
+ul {
+    list-style: none;
+    background-color: #444;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    border-bottom: 1px solid #888;
+    display: inline-block;
+}
+
+img {
+    max-width: 100%;
+}
+
+footer {
+    text-align: center;
+}
+
+.icon-menu {
+    float: right;
+    font-size: 30px;
+    font-size: 3em;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+a:hover {
+    background-color: #005f5f;
+}
+
+a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+@media screen and (min-width: 600px) {
+    li {
+      width: 120px;
+      border-bottom: none;
+      height: 50px;
+      line-height: 50px;
+      font-size: 1.4em;
+      display: inline-block;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .icon-menu {
+      display: none;
+    }
+}
