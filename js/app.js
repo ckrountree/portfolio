@@ -4,7 +4,8 @@
 
 function Projects ( projDataObj ) {
   this.title = projDataObj.title;
-  this.languages = projDataObj.languages;  
+  this.languages = projDataObj.languages;
+  this.description = projDataObj.description; 
   this.date = projDataObj.date;
   this.company = projDataObj.company;
 }
