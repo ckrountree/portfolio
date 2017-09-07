@@ -5,7 +5,7 @@
     "languages":    "HTML, CSS, Javascript",
     "description":  "A game about coding.",
     "date":         "May 19, 2017",
-    "company":      "Code Fellows, Portland",
+    "company":      "Code Fellows, Portland"
   },
 
   {
@@ -13,7 +13,7 @@
     "languages":    "HTML, CSS, Javascript",
     "description":  "A website where the customer can buy odd-ball items that are surely needed!",
     "date":         "May 17, 2017",
-    "company":      "Code Fellows, Portland",
+    "company":      "Code Fellows, Portland"
   },
 
   {
@@ -21,8 +21,7 @@
     "languages":    "HTML, CSS, Javascript",
     "description":  "A webpage with a game that gives the reader an insight to who I am.",
     "date":         "May 08, 2017",
-    "company":      "Code Fellows, Portland",
-  },
-  
-];
+    "company":      "Code Fellows, Portland"
+  }
+]
 
