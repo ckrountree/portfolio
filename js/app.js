@@ -4,10 +4,26 @@
 
 function Projects ( projDataObj ) {
   this.title = projDataObj.title;
-  this.languages = projDataObj.languages;  
+  this.languages = projDataObj.languages;
+  this.description = projDataObj.description;
   this.date = projDataObj.date;
-  this.company = projDataObj.company;
 }
+
+// create new Projects template by cloning original
+// hide original by removing the class and displaying none in module.css
+Projects.prototype.toHtml = function() {
+  var $newProjects = $( 'article.template' ).clone();
+  $newProjects.removeClass( '.template' );
+
+  // if date of project doesn't exist, add the class of 'draft'
+  if (!this.date) { $newProjects.addClass('draft'); }
+  $newProjects.attr('data-category', this.languages);
+  $newProjects.find('h1').text(this.title);
+  $newProjects.find('.projects-body').html(this.description);
+  $newProjects.find('time').text(this.date);
+
+
+
 
 // hide class = main-nav
 // $( '.main-nav').hide();

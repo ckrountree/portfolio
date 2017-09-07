@@ -27,11 +27,17 @@
                 </nav>
             </div>
         </header>
-        <section id="about" class="data-category">
-          <p>In west California born and raised on the playground was where I spent most of my days, chillin' out, maxin', relaxin', all cool.</p>
-        </section>
-        <section id="projects" class="data-category">
-            <p>project LIST goes here</p>
+          <main>
+            <section id="projects" class="data-category">
+              <article class="template" data-category="language">
+                <header>
+                  <h1>Project Title</h1>
+                  <div class="synop">
+                    published <time pubdate datetime="2000-01-01">Date</time>
+                  </div>
+                </header>
+                <section class="projects-body"></section>
+              </article>
           </section>
           <footer>
             &copy; Copyright 2017
@@ -39,7 +45,10 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
         integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
         crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>  
+        <!-- below is also a jQuery link.  Which one works? -->
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script> 
+        <script src="/vendor/scripts/marked.js"></script> 
         <script type="text/javascript" src="js/app.js"></script> 
     </body>
 </html>
