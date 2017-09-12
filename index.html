@@ -9,8 +9,18 @@
         <link rel="stylesheet" href="styles/styles.css"  type="text/css"/>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
         <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+
+        <script id="projHbars-template" type="text/x-handlebars-template">
+            <h1>{{title}}</h1>
+            <h3>{{language}}</h3>
+            <section class="proj-desc">{{{description}}}</section>
+            <!-- how to do date...like publishedOn? -->
+            <h3>{{date}}</h3>
+        </script>
     </head>
+
     <body>
+
         <header>
           <section>
             <h1>CK Rountree</h1>
@@ -22,23 +32,29 @@
                     <li class="nav" data-link="about"><a href="#" class="icon-address-book">About</a></li>
                     <li class="nav" data-link="projects"><a href="#" class="icon-rocket">Projects</a></li>
                     <li class="nav" data-link="skills"><a href="#" class="icon-link">Skills</a></li>
-                    <li><a href="http://github.com/brookr" target="_blank" class="icon-github"> GitHub</a></li>
+                    <li><a href="https://github.com/ckrountree" target="_blank" class="icon-github"> GitHub</a></li>
                   </ul>  
                 </nav>
             </div>
         </header>
+
           <main>
-            <section id="projects" class="data-category">
-              <article class="template" data-category="language">
-                <header>
-                  <h1>Project Title</h1>
+            <section id="about-content" class="data-tab">
+              <h2>About Me</h2>
+              <p>In west California, born and raised, on the playground was where I spent most of my days - Chillin' out, maxin', relaxin', all cool!</p>
+            </section>
+
+            <section id="proj-content" class="data-tab">
+                  <h1>Projects</h1>
                   <div class="synop">
-                    published <time pubdate datetime="2000-01-01">Date</time>
+                    <!-- list out projects with a brief synopsis -->
                   </div>
                 </header>
                 <section class="projects-body"></section>
               </article>
-          </section>
+            </section>
+          </main>
+
           <footer>
             &copy; Copyright 2017
           </footer>

@@ -8,12 +8,18 @@ function Projects ( projDataObj ) {
   this.description = projDataObj.description;
   this.date = projDataObj.date;
 }
+var app = app || {};
 
-// create new Projects template by cloning original
-// hide original by removing the class and displaying none in module.css
-Projects.prototype.toHtml = function() {
-  var $newProjects = $( 'article.template' ).clone();
-  $newProjects.removeClass( '.template' );
+(function( module ) {
+  function Projects( projDataObj ) {
+    Object.keys( projDataObj ).forEach(key => this[key] = projDataObj[key]);
+  }
+
+  Projects.all = [];
+// compile Handlebars template and add text to index.html
+  Projects.prototype.toHtml = function() {
+  var template = Handlebars.compile( $( '#projHbars-template' ).text();
+
 
   // if date of project doesn't exist, add the class of 'draft'
   if (!this.date) { $newProjects.addClass('draft'); }
@@ -40,3 +46,6 @@ $( 'nav a').click( function () {
   // $( 'nav a[data-tab="projects"]').click();
 
 });
+
+var data = $.getJSON( '/js/sourceData.JSON' )
+  .then( console.log( data ));
