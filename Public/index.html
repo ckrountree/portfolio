@@ -1,75 +1,72 @@
 <!DOCTYPE html>
+
 <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-        <title>CK Rountree Portfolio</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- Styles -->
-        <link rel="stylesheet" href="vendor/styles/normalize.css"/>
-        <link rel="stylesheet" href="styles/icons.css" type="text/css"/>
-        <link rel="stylesheet" href="styles/styles.css"  type="text/css"/>
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet"/>
-        <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200"/>
-        <!-- add browser tab icon -->
-        <link rel="shortcut icon" type="image/x-icon" href="./dancing lady.jpeg"/>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Styles -->
+    <link rel="stylesheet" href="vendor/styles/normalize.css" />
+    <link rel="stylesheet" href="styles/icons.css" type="text/css" />
+    <link rel="stylesheet" href="styles/styles.css" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="https://avatars2.githubusercontent.com/u/18607604?v=3&s=200">
+    <!-- add browser tab icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="./dancing lady.jpeg" />
 
-        <script id="projHbars-template" type="text/x-handlebars-template">
-            <h1>{{title}}</h1>
-            <h3>{{language}}</h3>
-            <section class="proj-desc">{{{description}}}</section>
-            <!-- how to do date...like publishedOn? -->
-            <h3>{{date}}</h3>
-        </script>
-    </head>
+    <title>CKR Portfolio</title>
+    <script id="projHbars-template" type="text/x-handlebars-template">
+      <h1>{{title}}</h1>
+      <a href="{{{projectLink}}}"></a>
+      <h3>{{language}}</h3>
+      <!-- how to do date...like publishedOn? -->
+      <h3>{{date}}</h3>
+      <section class="proj-desc">{{{description}}}</section>
+    </script>
+  </head>
 
-    <body>
+  <body>
 
-        <header>
-          <section>
-            <h1>CK Rountree</h1>
-          </section>
-            <div>
-                <nav class="main-nav">
-                  <span class="icon-menu"></span>
-                  <ul class="menu">
-                    <li class="nav" data-content="about"><a href="#" class="icon-address-book">About</a></li>
-                    <li class="nav" data-content="projects"><a href="#" class="icon-rocket">Projects</a></li>
-                    <li class="nav" data-content="skills"><a href="#" class="icon-link">Skills</a></li>
-                    <li><a href="https://github.com/ckrountree" target="_blank" class="icon-github"> GitHub</a></li>
-                  </ul>  
-                </nav>
-            </div>
+    <header>
+      <h1>CK Rountree</h1>
+      <div>
+        <nav class="main-nav">
+          <span class="icon-menu"></span>
+            <ul class="menu">
+              <li class="nav" data-content="about"><a href="#" class="icon-address-book">About</a></li>
+              <li class="nav" data-content="projects"><a href="#" class="icon-rocket">Projects</a></li>
+              <li class="nav" data-content="skills"><a href="#" class="icon-link">Skills</a></li>
+              <li><a href="https://github.com/ckrountree" target="_blank" class="icon-github"> GitHub</a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about-content" class="data-tab">
+        <h2>About Me</h2>
+        <p>In west California, born and raised, on the playground was where I spent most of my days - Chillin' out, maxin', relaxin',
+        all cool!</p>
+      </section>
+
+      <section id="proj-content" class="data-tab">
+        <h1>Projects</h1>
+        <article id="my-proj">
+
+        </article>
         </header>
+        <section id="project-body" class="data-tab"></section>
+        </article>
+      </section>
+    </main>
 
-          <main>
-            <section id="about-content" class="data-tab">
-              <h2>About Me</h2>
-              <p>In west California, born and raised, on the playground was where I spent most of my days - Chillin' out, maxin', relaxin', all cool!</p>
-            </section>
+    <footer>
+      &copy; Alchemy Code Lab | CK Rountree Portfolio | 2017
+    </footer>
+    <!-- Libraries -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+    <script src="https://cdn.rawgit.com/visionmedia.page.js/master/page.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
 
-            <section id="proj-content" class="data-tab">
-                  <h1>Projects</h1>
-                  <div>
-
-                  </div>
-                </header>
-                <section id="project-body" class="data-tab"></section>
-              </article>
-            </section>
-          </main>
-
-          <footer>
-            &copy; CK Rountree - 2017
-          </footer>
-        <!-- Libraries -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.js"
-        integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
-        crossorigin="anonymous"></script>
-        <!-- below is also a jQuery link.  Which one works? -->
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script> -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script> 
-        <script src="/vendor/scripts/marked.js"></script> 
-        
-        <script type="text/javascript" src="js/app.js"></script> 
-    </body>
 </html>
